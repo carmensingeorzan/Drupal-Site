@@ -3,6 +3,7 @@ description = Dark Elegant is a premium Drupal 7 theme. Developed by <a href="ht
 core = 7.x
 engine = phptemplate
 stylesheets[all][] = style.css
+stylesheets[all][] = page-node-25.css
 scripts[] = js/superfish.js
 scripts[] = js/custom.js
 scripts[] = js/jquery-migrate-1.0.0.js
