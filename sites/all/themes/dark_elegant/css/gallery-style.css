@@ -1,0 +1,12 @@
+.field-item{
+    float: left;
+}
+
+#main .field-items .field-item {
+    max-width: 240px;
+}
+
+#primary {
+    float:left;
+    width: 940px;
+}
