@@ -244,8 +244,8 @@
 
     <footer class="site-footer" role="contentinfo">
         <div class="copyright">
-            <?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <a href="<?php print $front_page; ?>"><?php print $site_name; ?></a><br/>
-            <?php print t('Theme by'); ?>  <a href="http://www.devsaran.com" target="_blank">Devsaran</a>
+            <?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?><!--, <a href="<?php // print $front_page; ?>"><?php // print $site_name; ?></a><br/>-->
+            <!--<?php // print t('Theme by');  ?>  <a href="http://www.devsaran.com" target="_blank">Devsaran</a>-->
         </div>
     </footer>
 </div>
