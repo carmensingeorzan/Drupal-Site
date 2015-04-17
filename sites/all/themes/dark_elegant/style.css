@@ -17,7 +17,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
     border: 0;
     font-family: inherit;
-    font-size: 100%;
+    /*font-size: 100%;*/
     font-style: inherit;
     font-weight: inherit;
     margin: 0;
@@ -81,7 +81,8 @@ button,
 input,
 select,
 textarea {
-    color: #666666;
+    /*color: #666666;*/
+    color: #DEDEDE;
     font-family: Open sans,sans-serif;
     font-size: 13px;
     font-size: 1.3rem;
@@ -256,8 +257,8 @@ tr{
 
 td{
     padding:5px 10px;
-/*    border-top:1px solid #ddd;
-    border-right:1px solid #ddd;*/
+    /*    border-top:1px solid #ddd;
+        border-right:1px solid #ddd;*/
 }
 
 button,
@@ -396,7 +397,7 @@ The following zoom:1 rule is specifically for IE6 + IE7.
 Move to separate stylesheet if invalid CSS is a problem.
 */
 .clearfix {
-    zoom: 1;
+    /*zoom: 1;*/
 }
 
 /* Header
@@ -710,7 +711,7 @@ h1.page-title {
 }
 
 .node h2.title a:link, .node h2.title a:visited{
-    color:#222;
+    /*color:#222;*/
 }
 
 #main #content .node-teaser {
@@ -1066,23 +1067,29 @@ ol.search-results { padding-left: 0; }
 
 .search-results .search-snippet-info { padding-left: 0; }
 
+/* info - posted articles and photos */
 .submitted{
-    background: #eee;
+    /*background: #eee;*/
+    background: grey;
     padding: 4px 9px;
     border-radius: 4px;
-    color: #383838;
-    text-shadow: 1px 1px #fff;
+    /*color: #383838;*/
+    color: #D6D6D6;
+    /*text-shadow: 1px 1px #fff;*/
     clear: both;
     display: block;
     margin-bottom: 2px;
 }
 
+/* Read more button */
 .links li a {
-    background-color: #E7E5E3;
-    color: #100100;
+    /*background-color: #E7E5E3;*/
+    background-color: #808080;
+    color: #DEDEDE;
+    /*color: #100100;*/
     padding: 4px 5px;
     border-radius: 4px;
-    text-shadow: 1px 1px #fff;
+    /*text-shadow: 1px 1px #fff;*/
     font-weight: normal;
 }
 
@@ -1252,7 +1259,7 @@ ul.inline, ul.links.inline {
 }
 
 #main .field-label{
-    color: #000;
+    /*color: #000;*/
 }
 
 #main .field-items .field-item{
@@ -1483,19 +1490,3 @@ ul.inline, ul.links.inline {
 .views-view-grid tbody {
     background-color: #202020;
 }
-/*
-    Foto/Video
-*/
-
-/*.gallery-view .field-item{
-    float: left;
-}
-
-.gallery-view #main .field-items .field-item {
-    max-width: 240px;
-}
-
-.gallery-view #primary {
-    float:left;
-    width: 940px;
-}*/
