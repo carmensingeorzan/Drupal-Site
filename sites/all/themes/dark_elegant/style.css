@@ -238,7 +238,7 @@ figure {
 table {
     margin: 0 0 1.5em;
     width: 100%;
-    border:1px solid #ddd;
+    /*border:1px solid #ddd;*/
     border-right:none;
     background:#fff;
 }
@@ -256,8 +256,8 @@ tr{
 
 td{
     padding:5px 10px;
-    border-top:1px solid #ddd;
-    border-right:1px solid #ddd;
+/*    border-top:1px solid #ddd;
+    border-right:1px solid #ddd;*/
 }
 
 button,
@@ -720,7 +720,7 @@ h1.page-title {
 }
 
 #content-wrap img {
-    border: 1px solid #CCCCCC;
+    /*border: 1px solid #CCCCCC;*/
     height: auto;
     margin: 0.5em 1em 0.5em 0;
     max-width: 97.4%;
@@ -1472,9 +1472,16 @@ ul.inline, ul.links.inline {
     -o-transform-origin:center bottom;
 }
 
-
 .container_6 .grid_4 {
     width: 900px;
+}
+
+#main {
+    background-color: #202020
+}
+
+.views-view-grid tbody {
+    background-color: #202020;
 }
 /*
     Foto/Video
