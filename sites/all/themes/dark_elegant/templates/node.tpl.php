@@ -88,7 +88,12 @@
 
         <?php if ($display_submitted): ?>
             <span class="submitted">
-                <?php print t('Posted by') . ' ' . $name; ?> <?php print t('on') . ' ' . $date; ?>
+                <?php
+                $date = strtotime(strip_tags($date));
+                setlocale(LC_ALL, 'ro_RO') . ': ';
+                print t('Posted by') . ' ' . $name;
+                print t('on') . ' ' . t(iconv('ISO-8859-1', 'UTF-8', strftime('%A, %d %B %Y', $date)));
+                ?>
             </span>
         <?php endif; ?>
 
@@ -102,7 +107,6 @@
         hide($content['comments']);
         hide($content['links']);
         print render($content);
-        
         ?>
     </div>
 
