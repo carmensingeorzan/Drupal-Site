@@ -74,6 +74,33 @@
                 <h1 class="site-name"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></h1>
                 <?php if ($site_slogan): ?><h2 class="site-slogan"><?php print $site_slogan; ?></h2><?php endif; ?>
             </hgroup>
+            <?php if (theme_get_setting('socialicon_display', 'dark_elegant')): ?>
+                <?php
+                $twitter_url = theme_get_setting('twitter_url', 'dark_elegant');
+                $facebook_url = theme_get_setting('facebook_url', 'dark_elegant');
+                $google_plus_url = theme_get_setting('google_plus_url', 'dark_elegant');
+                $pinterest_url = theme_get_setting('pinterest_url', 'dark_elegant');
+                ?>
+                <div class="social-profile">
+                    <ul>
+                        <?php if ($facebook_url): ?><li class="facebook">
+                                <a target="_blank" title="<?php print $site_name; ?> in Facebook" href="<?php print $facebook_url; ?>"><?php print $site_name; ?> Facebook </a>
+                            </li><?php endif; ?>
+                        <?php if ($twitter_url): ?><li class="twitter">
+                                <a target="_blank" title="<?php print $site_name; ?> in Twitter" href="<?php print $twitter_url; ?>"><?php print $site_name; ?> Twitter </a>
+                            </li><?php endif; ?>
+                        <?php if ($google_plus_url): ?><li class="google-plus">
+                                <a target="_blank" title="<?php print $site_name; ?> in Google+" href="<?php print $google_plus_url; ?>"><?php print $site_name; ?> Google+ </a>
+                            </li><?php endif; ?>
+                        <?php if ($pinterest_url): ?><li class="pinterest">
+                                <a target="_blank" title="<?php print $site_name; ?> in Pinterest" href="<?php print $pinterest_url; ?>"><?php print $site_name; ?> Twitter </a>
+                            </li><?php endif; ?>
+                        <li class="rss">
+                            <a target="_blank" title="<?php print $site_name; ?> in RSS" href="<?php print $front_page; ?>rss.xml"><?php print $site_name; ?> RSS </a>
+                        </li>
+                    </ul>
+                </div>
+            <?php endif; ?>
             <div class="search-block-region">
                 <?php print render($page['search_block']); ?>
             </div>
@@ -245,7 +272,7 @@
     <footer class="site-footer" role="contentinfo">
         <div class="copyright">
             <?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?><!--, <a href="<?php // print $front_page; ?>"><?php // print $site_name; ?></a><br/>-->
-            <!--<?php // print t('Theme by');  ?>  <a href="http://www.devsaran.com" target="_blank">Devsaran</a>-->
+            <!--<?php // print t('Theme by');     ?>  <a href="http://www.devsaran.com" target="_blank">Devsaran</a>-->
         </div>
     </footer>
 </div>

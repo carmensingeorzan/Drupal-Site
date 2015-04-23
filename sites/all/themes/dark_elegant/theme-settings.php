@@ -168,4 +168,40 @@ function dark_elegant_form_system_theme_settings_alter(&$form, &$form_state) {
         '#title' => t('Intro Text'),
         '#default_value' => theme_get_setting('intro_text', 'dark_elegant'),
     );
+    $form['dark_elegant_settings']['socialicon'] = array(
+        '#type' => 'fieldset',
+        '#title' => t('Social Icon'),
+        '#collapsible' => TRUE,
+        '#collapsed' => FALSE,
+    );
+    $form['dark_elegant_settings']['socialicon']['socialicon_display'] = array(
+        '#type' => 'checkbox',
+        '#title' => t('Show Social Icon'),
+        '#default_value' => theme_get_setting('socialicon_display', 'dark_elegant'),
+        '#description' => t("Check this option to show Social Icon. Uncheck to hide."),
+    );
+    $form['dark_elegant_settings']['socialicon']['twitter_url'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Twitter Profile URL'),
+        '#default_value' => theme_get_setting('twitter_url', 'dark_elegant'),
+        '#description' => t("Enter your Twitter Profile URL. Leave blank to hide."),
+    );
+    $form['dark_elegant_settings']['socialicon']['facebook_url'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Facebook Profile URL'),
+        '#default_value' => theme_get_setting('facebook_url', 'dark_elegant'),
+        '#description' => t("Enter your Facebook Profile URL. Leave blank to hide."),
+    );
+    $form['dark_elegant_settings']['socialicon']['google_plus_url'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Google Plus Address'),
+        '#default_value' => theme_get_setting('google_plus_url', 'dark_elegant'),
+        '#description' => t("Enter your Google Plus URL. Leave blank to hide."),
+    );
+    $form['dark_elegant_settings']['socialicon']['pinterest_url'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Pinterest Address'),
+        '#default_value' => theme_get_setting('pinterest_url', 'dark_elegant'),
+        '#description' => t("Enter your Pinterest URL. Leave blank to hide."),
+    );
 }

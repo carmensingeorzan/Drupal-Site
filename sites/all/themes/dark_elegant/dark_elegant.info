@@ -47,7 +47,11 @@ settings[slide2_url]  = "node/2"
 settings[slide3_url]  = "node/3"
 settings[slide4_url]  = "node/4"
 settings[slide5_url]  = "node/5"
-settings[intro_text]  = "A Elegant Drupal Theme from <a href='http://www.devsaran.com'>Devsaran</a>."
+settings[socialicon_display]  = 1
+settings[facebook_url]  = "https://www.facebook.com/scoutmures"
+settings[twitter_url]  = "http://www.twitter.com/"
+settings[google_plus_url]  = "https://plus.google.com/u/0/109064032428497406718"
+settings[pinterest_url]  = "http://pinterest.com"
 
 ; Information added by drupal.org packaging script on 2013-09-02
 version = "7.x-1.1"
